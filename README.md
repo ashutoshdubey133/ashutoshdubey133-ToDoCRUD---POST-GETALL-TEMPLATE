@@ -1,6 +1,8 @@
 # TodoCRUDappJava
 A basic CRUD app made using Spring Boot in Java REST API with h2 memory.
 
+The Problem statement can be viewed from here - https://docs.google.com/document/d/1uaCQc_tR3HNnDR92Vin7_H5w-JhHQut5KhWxPjyqJ0w/edit?usp=sharing
+
 API Endpoints.
 
 1. GET - /users/{userId} - return user info for the specific userId.
