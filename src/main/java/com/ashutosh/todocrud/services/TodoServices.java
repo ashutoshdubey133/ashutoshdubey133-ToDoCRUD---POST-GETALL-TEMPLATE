@@ -4,13 +4,11 @@ import com.ashutosh.todocrud.entity.Todo;
 import com.ashutosh.todocrud.repository.ToDoRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-/*
-TODO
-    - Annotate the class to mark it as Service class.
- */
+@Service
 public class TodoServices {
 
     private final ToDoRepository toDoRepository;
@@ -20,20 +18,11 @@ public class TodoServices {
         this.toDoRepository = toDoRepository;
     }
 
-    /*
-        TODO
-            - Write proper method parameters to get Todo.
-            - Save the todo to the database.
-     */
-    public void addTodo(){
-
+    public void addTodo(Todo todo){
+        toDoRepository.save(todo);
     }
 
-    /*
-    TODO
-        - Return a list of Todos from the database.
-     */
     public List<Todo> getAllTodo() {
-
+        return toDoRepository.findAll();
     }
 }
